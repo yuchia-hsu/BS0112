@@ -1,0 +1,511 @@
+// index.html
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+// scrollbar
+// width
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+// track
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+// handle
+::-webkit-scrollbar-thumb{
+    background: rgb(184, 84, 97);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #FFF;
+    box-shadow: 3px 3px 5px 1px #757474;
+
+
+    div.logo{
+        display: flex;
+        align-items: center;
+        flex: 5 1 400px;
+        margin-left: 2rem;
+
+        img{
+            width: 3vw;
+            height: 3vw;
+            margin: 1vw 0vw;
+            margin-right: 20px;
+        }
+
+        h2{
+            color: #333;
+        }
+
+    }
+    nav{
+        flex: 2 1 400px;
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            li{
+                a{
+                    color: rgb(184, 84, 97);
+                    text-decoration: none;
+                    font-size: 1.35rem;
+                }
+                a:hover{
+                    color: rgb(217, 147, 173);
+                }
+            }
+        }
+    }
+}
+
+main{
+    section.backImage{
+        min-height: 90vh;
+        width: 100%;
+        background-image: url(../Pictures/sweet/banner3.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        div.filter{
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            min-height: 90vh;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        h3{
+            font-size: 3.2rem;
+            color: #FFF;
+            margin: 2rem 0rem;
+        }
+        button.start{
+            background-color:  rgb(184, 84, 97);
+            padding: 0.75rem 1.5rem;
+            font-size: 1.5rem;
+            color: #fff;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+
+            &:hover{
+                background-color:  rgb(218, 100, 116);
+            }
+        }
+    }
+}
+// second page
+section.second{
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2{
+        font-size: 2rem;
+        margin: 2rem 0rem;
+    }
+
+    section.cards{
+        display: flex;
+        // border: 2px solid red;
+        width: 80%;
+        min-height: 80vh;
+        flex-wrap: wrap;
+
+        div.card{
+            // border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 1rem;
+            flex: 1 1 300px;
+
+            div.image-container{
+                overflow: hidden;
+                width: 15vw;
+                height: 15vw;
+                border-radius: 50%;
+
+                .box1{
+                    background-image: url(../Pictures/sweet/banner2.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    transform: all 0.2s;
+                }
+                .box2{
+                    background-image: url(../Pictures/sweet/banner1.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    transform: all 0.2s;
+                }
+                .box3{
+                    background-image: url(../Pictures/sweet/banner4.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    transform: all 0.2s;
+                }
+
+                .box1:hover, .box2:hover, .box3:hover{
+                    transform: scale(1.2);
+                }
+            }
+            h4{
+                font-size: 1.6rem;
+                margin: 0.7rem 0rem;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+            a{
+                text-decoration: none;
+                padding: 1rem 1.5rem;
+                margin-top: 3vh;
+                background-color: rgb(184, 84, 97);
+                color: #FFF;
+                font-size: 1.25rem;
+            }
+
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30vh;
+    justify-content: space-around;
+    background-color: rgb(207, 207, 207);
+    padding: 10px;
+
+    div.logo{
+        display: flex;
+        align-items: center;
+        color: #333;
+        img{
+            width: 4vw;
+            height: 4vw;
+            margin-right: 20px;
+        }
+    }
+    nav{
+        width: 30%;
+        ul{
+            display: flex;
+            list-style-type: none;
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            li{
+                flex-basis: 100px;
+
+                a{
+                    color:rgb(253, 253, 253);
+                    text-decoration: none;
+                    font-size: 1.35rem;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+section.links{
+    a{
+        margin: 0rem 1rem;
+        img{
+            width: 3vw;
+            height: 3vw;
+        }
+    }
+}
+
+
+
+// about.html***********************************
+main{
+    section.about_backImage{
+        min-height: 40vh;
+        width: 100%;
+        background-image: url(../Pictures/sweet/banner3.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        div.filter{
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            min-height: 40vh;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        h3{
+            font-size: 2.5rem;
+            color: #FFF;
+            margin: 2rem 0rem;
+        }
+    }
+}
+// second page
+section.about_second{
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // text-align: center;
+
+    .about_contentL{
+        min-height: 50vh;
+        flex: 1 1 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5vw;
+        // background-color: yellow;
+
+        img{
+            max-width: 55vh;
+
+        }
+    }
+    .about_contentR{
+        min-height: 30vh;
+        flex: 2 1 50%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 5vw;
+        // background-color: yellowgreen;
+    }
+
+
+    section.cards{
+        display: flex;
+        // border: 2px solid red;
+        width: 80%;
+        min-height: 80vh;
+        flex-wrap: wrap;
+        padding: 8vh 0;
+
+        div.card{
+            // border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-around;
+            padding: 3rem;
+            flex: 1 1 300px;
+
+            div.image-container{
+                overflow: hidden;
+                width: 15vw;
+                height: 15vw;
+                border-radius: 50%;
+
+                .box1{
+                    background-image: url(../Pictures/sweet/banner2.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    transform: all 0.2s;
+                }
+                .box2{
+                    background-image: url(../Pictures/sweet/banner1.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    transform: all 0.2s;
+                }
+                .box3{
+                    background-image: url(../Pictures/sweet/banner4.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    transform: all 0.2s;
+                }
+
+                .box1:hover, .box2:hover, .box3:hover{
+                    transform: scale(1.2);
+                }
+            }
+            h4{
+                font-size: 1.6rem;
+                margin: 1.5rem 0rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+// contact.html*********************************
+section.contact_second{
+    min-height: 70vh;
+    .flex{
+        padding: 5vw 7vw;
+        justify-content: center;
+        .contactL{
+            flex: 0 2 50%;
+            padding-right: 2vw;
+            h1{
+                font-size: 2rem;
+                color: rgb(184, 84, 97);
+            }
+            h3{
+                margin: 1rem 0;
+                font-size: 1.5rem;
+                border-bottom: 2px solid rgb(184, 84, 97);
+            }
+            p{
+                margin-bottom: 3rem;
+            }
+        }
+        .contactR{
+            flex: 0 0 50%;
+            text-align: center;
+        }
+    }
+}
+
+
+// login.html***********************************
+section.login_second{
+    display: flex;
+    height: 80vh;
+    padding: 5vw 10vw;
+    div.login{
+        display: flex;
+        flex: 1 0 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color:blanchedalmond;
+        .login_box{
+            width: 40vh;
+            height: 50vh;
+            border: 1px solid rgb(184, 84, 97);
+        }
+        .join_box{
+            width: 50vh;
+            height: 60vh;
+            border: 1px solid rgb(184, 84, 97);
+        }
+    }
+}
+
+// share
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+// RWD
+@media screen and (max-width: 700px){
+    section.second{
+        section.cards{
+            div.card{
+                img{
+                    width: 40vw;
+                    height: 40vw;
+                }
+            }
+        }
+    }
+    section.about_second{
+        div.flex{
+            div.about_contentR{
+                padding-left: 5vw;
+            }
+        }
+    }
+
+    footer{
+        div.logo{
+            img{
+                width: 15vw;
+                height: 15vw;
+            }
+        }
+        section.links{
+            margin-top: 1rem;
+            a{
+                img{
+                    width: 10vw;
+                    height: 10vw;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 550px){
+    header{
+        div.logo{
+            margin-left: 0.5rem;
+            img{
+                width: 15vw;
+                height: 15vw;
+            }
+        }
+
+    }
+}

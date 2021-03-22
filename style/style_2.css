@@ -1,0 +1,618 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b85461;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #FFF;
+  -webkit-box-shadow: 3px 3px 5px 1px #757474;
+          box-shadow: 3px 3px 5px 1px #757474;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 400px;
+          flex: 5 1 400px;
+  margin-left: 2rem;
+}
+
+header div.logo img {
+  width: 3vw;
+  height: 3vw;
+  margin: 1vw 0vw;
+  margin-right: 20px;
+}
+
+header div.logo h2 {
+  color: #333;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li a {
+  color: #b85461;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+header nav ul li a:hover {
+  color: #d993ad;
+}
+
+main section.backImage {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url(../Pictures/sweet/banner3.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main section.backImage div.filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+main section.backImage h3 {
+  font-size: 3.2rem;
+  color: #FFF;
+  margin: 2rem 0rem;
+}
+
+main section.backImage button.start {
+  background-color: #b85461;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+main section.backImage button.start:hover {
+  background-color: #da6474;
+}
+
+section.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section.second h2 {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+
+section.second section.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  min-height: 80vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.second section.cards div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+}
+
+section.second section.cards div.card div.image-container {
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+section.second section.cards div.card div.image-container .box1 {
+  background-image: url(../Pictures/sweet/banner2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transform: all 0.2s;
+          transform: all 0.2s;
+}
+
+section.second section.cards div.card div.image-container .box2 {
+  background-image: url(../Pictures/sweet/banner1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transform: all 0.2s;
+          transform: all 0.2s;
+}
+
+section.second section.cards div.card div.image-container .box3 {
+  background-image: url(../Pictures/sweet/banner4.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transform: all 0.2s;
+          transform: all 0.2s;
+}
+
+section.second section.cards div.card div.image-container .box1:hover, section.second section.cards div.card div.image-container .box2:hover, section.second section.cards div.card div.image-container .box3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section.second section.cards div.card h4 {
+  font-size: 1.6rem;
+  margin: 0.7rem 0rem;
+}
+
+section.second section.cards div.card p {
+  font-size: 1.25rem;
+}
+
+section.second section.cards div.card a {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  margin-top: 3vh;
+  background-color: #b85461;
+  color: #FFF;
+  font-size: 1.25rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #cfcfcf;
+  padding: 10px;
+}
+
+footer div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+}
+
+footer div.logo img {
+  width: 4vw;
+  height: 4vw;
+  margin-right: 20px;
+}
+
+footer nav {
+  width: 30%;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer nav ul li {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+
+footer nav ul li a {
+  color: #fdfdfd;
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+section.links a {
+  margin: 0rem 1rem;
+}
+
+section.links a img {
+  width: 3vw;
+  height: 3vw;
+}
+
+main section.about_backImage {
+  min-height: 40vh;
+  width: 100%;
+  background-image: url(../Pictures/sweet/banner3.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main section.about_backImage div.filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 40vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+main section.about_backImage h3 {
+  font-size: 2.5rem;
+  color: #FFF;
+  margin: 2rem 0rem;
+}
+
+section.about_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about_second .about_contentL {
+  min-height: 50vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5vw;
+}
+
+section.about_second .about_contentL img {
+  max-width: 55vh;
+}
+
+section.about_second .about_contentR {
+  min-height: 30vh;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 50%;
+          flex: 2 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 5vw;
+}
+
+section.about_second section.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  min-height: 80vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 8vh 0;
+}
+
+section.about_second section.cards div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+}
+
+section.about_second section.cards div.card div.image-container {
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+section.about_second section.cards div.card div.image-container .box1 {
+  background-image: url(../Pictures/sweet/banner2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transform: all 0.2s;
+          transform: all 0.2s;
+}
+
+section.about_second section.cards div.card div.image-container .box2 {
+  background-image: url(../Pictures/sweet/banner1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transform: all 0.2s;
+          transform: all 0.2s;
+}
+
+section.about_second section.cards div.card div.image-container .box3 {
+  background-image: url(../Pictures/sweet/banner4.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transform: all 0.2s;
+          transform: all 0.2s;
+}
+
+section.about_second section.cards div.card div.image-container .box1:hover, section.about_second section.cards div.card div.image-container .box2:hover, section.about_second section.cards div.card div.image-container .box3:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section.about_second section.cards div.card h4 {
+  font-size: 1.6rem;
+  margin: 1.5rem 0rem;
+}
+
+section.about_second section.cards div.card p {
+  font-size: 1rem;
+}
+
+section.contact_second {
+  min-height: 70vh;
+}
+
+section.contact_second .flex {
+  padding: 5vw 7vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contact_second .flex .contactL {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 2 50%;
+          flex: 0 2 50%;
+  padding-right: 2vw;
+}
+
+section.contact_second .flex .contactL h1 {
+  font-size: 2rem;
+  color: #b85461;
+}
+
+section.contact_second .flex .contactL h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #b85461;
+}
+
+section.contact_second .flex .contactL p {
+  margin-bottom: 3rem;
+}
+
+section.contact_second .flex .contactR {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  text-align: center;
+}
+
+section.login_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  padding: 5vw 10vw;
+}
+
+section.login_second div.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: blanchedalmond;
+}
+
+section.login_second div.login .login_box {
+  width: 40vh;
+  height: 50vh;
+  border: 1px solid #b85461;
+}
+
+section.login_second div.login .join_box {
+  width: 50vh;
+  height: 50vh;
+  border: 1px solid #b85461;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+  section.second section.cards div.card img {
+    width: 40vw;
+    height: 40vw;
+  }
+  section.about_second div.flex div.about_contentR {
+    padding-left: 5vw;
+  }
+  footer div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer section.links {
+    margin-top: 1rem;
+  }
+  footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+/*# sourceMappingURL=style_2.css.map */
