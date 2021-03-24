@@ -65,13 +65,14 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="submit" value="登入">
-                                <input type="reset" value="重填">
+                                <button type="reset">重填</button>
+                                <button type="submit">登入</button>
                             </td>
                         </tr>
                     </table>
             </form>
         </div>
+        
         <div class="join_box">
             <h3>加入會員</h3>
             <form action="#" method="post">
@@ -108,11 +109,16 @@
                     </tr>
                     <tr>
                         <td>請輸入驗證碼：</td>
-                        <td></td>
+                        <td><input type="text" name="tel" size="5"></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td colspan="2">--- 我是驗證碼 ---</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="reset">重填</button>
+                            <button type="submit">確認</button>
+                        </td>
                     </tr>
                 </table>
                 
